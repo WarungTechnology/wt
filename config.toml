@@ -1,0 +1,14 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'id-id'
+title = 'WarTech'
+
+description = "Saya Belajar Deskripsi"
+
+MetaDataFormat = "yaml"
+themesDir = "themes"
+theme = "tema-1"
+
+[author]
+  name = "afendisurya"
+  homepage = "afendisurya.com"
+  image = "/img/hal/wt/foto.jpg"

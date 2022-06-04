@@ -1,0 +1,49 @@
+<nav class="bg-yellow-500 shadow">
+	<div class="max-w-6xl px-4">
+		<div>
+			<div class="flex text-white font-bold text-2xl">
+				<div class="flex items-center">
+					<a href="{{ .Site.BaseURL }}" class="flex items-center">
+					<img src="/img/hal/wt/logo.svg" height="35" width="35" class="mr-2"/>
+					</a>
+				</div>
+				<div class="hidden relative  md:flex sm:right-4 sm:top-4 sm:static sm:w-full sm:bg-red-500" id="menu">
+					<ul class="items-center owercase gap-x-8 py-4 px-2 ">
+						<li>
+						<a href="/info/" class="">info</a>
+							</li>
+						<li class="items-center">
+							<button>
+							<span>aplikasi</span>
+							</button>
+							<div class="hidden absolute right-0 py-2 mt-2 bg-red-50">
+							<a href="#" class="block px-4 py-2">DL 1</a>
+							<a href="#" class="block px-4 py-2">DL 2</a>
+							</div>
+						</li>
+						<li><a href="/tutor/">tutor</a></li>
+					</ul>
+				</div>
+				<div class="ml-auto items-center md:hidden py-4 px-2">
+					<button type="button" onclick="fungsi_nav()" id="menu-button"><span class="fa fa-ellipsis-v"></span></button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<script>
+
+function fungsi_nav(){
+var button = document.getElementById('menu-button');
+var menu = document.getElementById('menu');
+
+  menu.classList.toggle('hidden');
+
+}
+
+</script>
+
+<br>
+<br>

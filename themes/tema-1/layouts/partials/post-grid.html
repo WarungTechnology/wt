@@ -1,0 +1,33 @@
+<!-- 
+    
+TODO
+
+/img/post_tanpa_poster.svg
+
+-->
+
+<article class="">
+{{ $paginator := .Paginate (where .Site.Pages "Type" "post") 6 }}
+{{ range $paginator.Pages }}
+<table class="ml-20 mr-32 border text-blac">
+<tr>
+    <td>
+        <a href="{{ .RelPermalink }}">
+        <img 
+            src='{{ if eq .Params.Image "" }}/img/hal/sampel/tidak_ada_poster_1080.svg{{else}}{{ .Params.Image }}{{end}}'
+            alt='{{ .Title }}' width="200" height="200"/>
+        </a>
+    </td>
+        <td>
+            <a class="text-left font-bold text-3xl underline decoration-dashed decoration-4 decoration-yellow-500 capitalize" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <div class="text-normal text-gray-500 text-left">
+            <time>{{ .Date.Format "02 Jan 2006" }}</time> >> <time>{{ .Lastmod.Format "02 Jan 2006" }}</time>
+            </div>
+            <div class="text-lg font-medium text-justify text-black normal-case">{{ .Summary }}</div>
+    </td>
+</tr>
+</table>
+<br>
+<br>
+{{ end }}
+</article>

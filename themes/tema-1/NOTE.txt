@@ -1,0 +1,188 @@
+ENGINE = HUGO
+HOSTING = GITHUB
+IMAGE = GITHUB
+FORMAT = MARKDOWN
+FONT = Coming Soon,Comforta
+COMMNET = DISQUS
+FRAMENETWORK = Tailwind CSS
+ICON = FONT AWESOME
+
+Tools	Before	After
+CSS Framework	Bootstrap	Tailwind CSS
+Testing Framework	-	Cypress.io
+CSS Tooling	SASS	PostCSS
+Icons	Bootstrap Icons
+Heroicons
+PWA Tools	Turbolinks
+Turbo by Hotwired
+Javascript Framework/Libs	Alpinejs, JQuery, Popper.js	Aplinejs
+
+Warna
+Gold
+#FFD700
+
+TERANG
+NAV_TXT = yellow-50
+NAV_BG = yellow-500
+TXT = DarkSlateGray, yellow-400, amber-400
+BG = Gold, 
+SELECTED = yelow-100
+CODE = 
+HILIGHT =
+UNDER = 
+
+GELAP
+NAV_TXT = yellow-900
+NAV_BG = yellow-500
+TXT = DarkSlateGray
+BG = Gold
+SELECTED = 
+HILIGHT =
+UNDER = 
+
+
+
+LIGHT
+TXT = Beige , BlanchedAlmond , BurlyWood , LightGrey, LightSlateGray
+BG = AliceBlue , Azure , Cornsilk , GhostWhite , FloralWhite , HoneyDew , Ivory, WhiteSmoke , Snow , SeaShell , OldLace , MintCream, Linen
+U = Aqua , Aquamarine , Coral, Chocolate , Cyan, Gold, LightCyan
+
+DARK
+TXT = AliceBlue , Azure , Cornsilk , GhostWhite , FloralWhite , HoneyDew , Ivory, WhiteSmoke , Snow , SeaShell , OldLace , MintCream, Linen
+BG = DimGray , SlateGray , Beige , BlanchedAlmond , BurlyWood , LightGrey, LightSlateGray
+U = GhostWhite , FloralWhite
+
+TODO
+
+dropdown tailwind
+collapse tailwind
+featured image
+&laqup
+&hellip
+&raquo
+bootstrap widget
+card-post
+object fit to page 
+
+
+ICON
+COLLAPSE =  	fa fa-bars ,  	fa fa-ellipsis-v , fa fa-navicon
+CARI = fa-search , fa-solid fa-magnifying-glass
+TERANG = fa-sun , fa-snowflake
+GELAP = fa-moon
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+This is a community wiki, you can expand it if you have something to add.
+
+These CSS-only frameworks are compatible with AMP (sorted by size):
+
+    Mini.css (46KB minified)
+    AMP Spectre (42KB minified)
+    AMP MUI (40KB minified)
+    Picnic CSS (38KB minified)
+    AMP Surface (28KB minified)
+    Mustard UI (24KB minified)
+    AMP Start (23KB minified)
+    Pure CSS (16KB minified)
+    Milligram (9KB minified)
+    1BX (9KB minified)
+    Skeleton (6KB minified)
+    Tacit (6KB minified)
+    Wing (5KB minified)
+
+
+DROPDOWN
+
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Dropdown</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="">Link Dropdown</a></li>
+				</ul>
+			</li>
+			
+ITEM
+
+			<li class="nav-item">
+				<a class="nav-link" href="alamat_link">Link 1</a>
+			</li>
+
+
+<nav class="flex justify-between">
+	<div class="">
+	<!-- LOGO -->
+	<a class="" href="{{ .Site.BaseURL }}">
+			<img src="/img/hal/wt/logo.svg" alt="logo" style="width: 30px" height="30px">
+		</a>
+	<span class="">{{ .Site.Title }}</span>
+	
+		<!-- COLLAPSE -->
+		<button class="" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+		<span class="fa fa-ellipsis-v"></span></button>
+			
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav justify-content-center">
+		
+		<!-- DROPDOWN -->
+		
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Aplikasi</a>
+				
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="">Android</a></li>
+					</ul>
+			</li>
+			
+			
+			<!-- MENU -->
+			<li class="mr-3 inline-block border border-blue-500 rounded py-2 px-4 bg-blue-500">
+				<a class="" href="">TES NAVAR MENU</a>
+			</li>	
+			
+		</ul>
+		</div>
+		<!-- /COLLAPSE -->
+		<!-- MODE -->
+		
+		<!-- PENCARIAN -->
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_pencarian">
+		<img class="fa fa-search">
+		</button>
+
+		<div class="modal fade" id="modal_pencarian">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title">Pencarian</h1>
+					</div>
+				<div class="modal-body">
+					Pencarian
+				</div>
+		
+		</div>
+		</div>
+		</div>
+	</div>
+</nav>
+
+============== SEMENTARA ======================
+const button = document.querySelector('#menu-button'); // Hamburger Icon
+const menu = document.querySelector('#menu'); // Menu
+
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+absolute
+getElementById
+
+ <button onclick="myFunction()">Click Me</button>
+
+<div id="myDIV">Hello</div> 
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+} 
