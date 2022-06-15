@@ -3,30 +3,19 @@
 <!-- Meta -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.Description }}{{ else }}{{ .Description }}{{ end }}">
 <!-- Internal Template Hugo -->
 {{ template "_internal/disqus.html" . }}
 {{ template "_internal/google_analytics.html" . }}
 {{ template "_internal/google_analytics_async.html" . }}
 {{ template "_internal/opengraph.html" . }}
-
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 <!-- ikon -->
 <link rel="icon" href="/img/hal/wt/logo.svg" />
-<!-- CSS 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/mod.css">
--->
 <link rel="stylesheet" href="/css/fa6.css">
-
-{{ $styles := resources.Get "css/main.css" | postCSS }}
-{{ if .Site.IsServer }}        
-<link rel="stylesheet" href="/css/build.css"/>
-{{ else }}
-{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
-{{ end }}
 <!--JS --->
+<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="/js/fa6.js"></script>
-<script type="text/javascript" src="/js/mod.js"></script>

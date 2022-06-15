@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Warung Technology</title>
-    <link>localhost:1313/tags/</link>
-    <description>Recent content in Tags on Warung Technology</description>
+    <title>Tags on WarTech</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on WarTech</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>id-id</language><atom:link href="localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>id-id</language>
+    <lastBuildDate>Fri, 03 Jun 2022 06:29:01 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IsiTaq</title>
+      <link>http://localhost:1313/tags/isitaq/</link>
+      <pubDate>Fri, 03 Jun 2022 06:29:01 +0700</pubDate>
+      
+      <guid>http://localhost:1313/tags/isitaq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lorem</title>
+      <link>http://localhost:1313/tags/lorem/</link>
+      <pubDate>Wed, 01 Jun 2022 05:34:22 +0700</pubDate>
+      
+      <guid>http://localhost:1313/tags/lorem/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

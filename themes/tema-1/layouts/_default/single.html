@@ -6,31 +6,31 @@
     <body>
         {{ partial "nav.html" . }}
         <!-- #PERBAIKI -->
-        <div class="flex flex-col">
-            <div class="place-items-center"><h1 class="">{{ .Title }}</h1>
+        <div>
+            <div>{{ .Title }}</h1>
             </div>
         </div>
-            <div class="flex flex-row">
-                <div class="w-1/5">
+            <div>
+                <div>
                     {{ partial "sidebar-kiri.html" . }}
                 </div>
-                <div class="w-6/12">
-                     <article class="border bg-white border-1 card">
-                        <div class="post-content card-body">
+                <div>
+                     <article>
+                        <div>
                             {{ .Content}}
                         </div>
                     </article>
-                    <div class="">
-                            <div class="">
-                            <img src="{{ .Site.Author.image }}" class="rounded-circle" width="32" height="32">
+                    <div>
+                            <div>
+                            <img src="{{ .Site.Author.image }}" width="32" height="32">
                             <a href="{{ .Site.Author.homepage }}"></a> @{{ .Site.Author.name }}
                          </div>
                         </div>
-                        <div class="post-footer">
+                        <div>
                             {{ partial "disqus.html" . }}
                         </div>
                 </div>
-                <div class="w-max">
+                <div>
                     {{ partial "sidebar-kanan.html" . }}
                 </div> 
             </div>

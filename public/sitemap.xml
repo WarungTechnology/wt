@@ -2,10 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2022-06-03T06:29:01+07:00</lastmod>
   </url><url>
-    <loc>localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/categories/isikategori/</loc>
+    <lastmod>2022-06-03T06:29:01+07:00</lastmod>
   </url><url>
-    <loc>localhost:1313/</loc>
+    <loc>http://localhost:1313/tags/isitaq/</loc>
+    <lastmod>2022-06-03T06:29:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/lore-ipsum-2/</loc>
+    <lastmod>2022-06-03T06:29:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2022-06-03T06:29:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2022-06-03T06:29:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2022-06-03T06:29:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lorem/</loc>
+    <lastmod>2022-06-01T05:34:22+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/lorem-ipsum/</loc>
+    <lastmod>2022-06-01T05:34:22+07:00</lastmod>
   </url>
 </urlset>

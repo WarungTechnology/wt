@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on WarTech</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on WarTech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id-id</language>
+    <lastBuildDate>Fri, 03 Jun 2022 06:29:01 +0700</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lorem ipsum 2</title>
+      <link>http://localhost:1313/post/lore-ipsum-2/</link>
+      <pubDate>Fri, 03 Jun 2022 06:29:01 +0700</pubDate>
+      
+      <guid>http://localhost:1313/post/lore-ipsum-2/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</description>
+    </item>
+    
+    <item>
+      <title>lorem ipsum</title>
+      <link>http://localhost:1313/post/lorem-ipsum/</link>
+      <pubDate>Wed, 01 Jun 2022 05:34:22 +0700</pubDate>
+      
+      <guid>http://localhost:1313/post/lorem-ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,49 +1,52 @@
-<nav class="bg-yellow-500 shadow">
-	<div class="max-w-6xl px-4">
-		<div>
-			<div class="flex text-white font-bold text-2xl">
-				<div class="flex items-center">
-					<a href="{{ .Site.BaseURL }}" class="flex items-center">
-					<img src="/img/hal/wt/logo.svg" height="35" width="35" class="mr-2"/>
-					</a>
-				</div>
-				<div class="hidden relative  md:flex sm:right-4 sm:top-4 sm:static sm:w-full sm:bg-red-500" id="menu">
-					<ul class="items-center owercase gap-x-8 py-4 px-2 ">
-						<li>
-						<a href="/info/" class="">info</a>
-							</li>
-						<li class="items-center">
-							<button>
-							<span>aplikasi</span>
-							</button>
-							<div class="hidden absolute right-0 py-2 mt-2 bg-red-50">
-							<a href="#" class="block px-4 py-2">DL 1</a>
-							<a href="#" class="block px-4 py-2">DL 2</a>
-							</div>
-						</li>
-						<li><a href="/tutor/">tutor</a></li>
-					</ul>
-				</div>
-				<div class="ml-auto items-center md:hidden py-4 px-2">
-					<button type="button" onclick="fungsi_nav()" id="menu-button"><span class="fa fa-ellipsis-v"></span></button>
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<nav>
+	<ul>
+		<li><a href="{{ .Site.BaseURL }}"><img src="/img/hal/wt/logo.svg" width="32" height="32"></a></li>
+	</ul>
+	<ul>
+	<li><a href="/info/">info</li>
+	<li>
+	<details role="list">
+		<summary aria-haspopup="listbox">aplikasi</summary>
+		<ul role="listbox">
+			<li><a href="">android</a></li>
+			<li><a href="">ios</li>
+			<li><a href="">kaios</li>
+			<li><a href="">linux</li>
+			<li><a href="">macos</li>
+			<li><a href="">windows</li>
+		</ul>
+	</details>
+	</li>
+	<li><a href="/3t/">3T</a></li>
+	</ul>
 </nav>
 
-<script>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="/img/hal/wt/logo.svg" width="32" height="32"></a>
+		
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navHP"><span class="navbar-toggler-icon"></span></button>
 
-function fungsi_nav(){
-var button = document.getElementById('menu-button');
-var menu = document.getElementById('menu');
-
-  menu.classList.toggle('hidden');
-
-}
-
-</script>
-
-<br>
-<br>
+		<div class="collapse navbar-collapse" id="navHP">
+			<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style='--bs-scroll-height: 100px;'>
+				<li class="nav-item">
+					<a class="nav-link active" href="/info/">info</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">aplikasi</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item">Android</a></li>
+						<li><a class="dropdown-item">Java</a></li>
+						<li><a class="dropdown-item">kaiOS</a></li>
+						<li><a class="dropdown-item">Linux</a></li>
+						<li><a class="dropdown-item">macOS</a></li>
+						<li><a class="dropdown-item">Windows</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="/info/">tips trik tutorial</a>
+			</ul>
+		</div>
+	</div>
+	
+</nav>
